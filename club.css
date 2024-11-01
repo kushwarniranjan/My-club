@@ -1,0 +1,52 @@
+body {
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  all: inherit;
+}
+h2 {
+  color: deeppink;
+}
+h1 {
+  border: 5px solid rgb(0, 255, 26);
+  color: purple;
+  font-style: italic;
+  font-size: 2em;
+  text-align: center;
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+.wrapper {
+  display: inline-block;
+}
+.text {
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: purple;
+  width: 100%;
+  text-transform: uppercase;
+  border-right: 5px solid;
+  white-space: hidden;
+  animation: typing 1.5s steps(9);
+  cursor: 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  70% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+h3 {
+  color: navajowhite;
+  list-style-type: disc;
+}
