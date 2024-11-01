@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css"
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="login.php" method="post">
+        <h2>Login</h2>
+        <label for="username">username: </label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="Password"
+          name="password"
+          <input
+          type="checkbox"
+          id="chk"
+          show
+          password
+          required
+        />
+        <script>
+          const password = document.getElementById("password");
+          const chk = document.getElementById("chk");
+          chk.onchange = function (e) {
+            password.type = chk.checked ? "text" : "password";
+          };
+        </script>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
